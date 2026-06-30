@@ -31,7 +31,7 @@ export function HeroRight() {
       className="relative mx-auto w-full max-w-md lg:max-w-xl"
     >
       <div
-        className="absolute -inset-4 rounded-[2.5rem] bg-emerald-400/20 blur-2xl"
+        className="absolute -inset-6 rounded-[2.5rem] bg-[#D9BCA3]/60 blur-3xl"
         aria-hidden="true"
       />
 
