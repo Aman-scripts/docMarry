@@ -12,24 +12,28 @@ export function HeroRight() {
     const prefersReducedMotion = window.matchMedia(
       "(prefers-reduced-motion: reduce)"
     ).matches;
-    if (prefersReducedMotion) {
-      video.pause();
-    } else {
-      video.play().catch(() => {});
-    }
+    if (prefersReducedMotion) video.pause();
+    else video.play().catch(() => {});
   }, []);
 
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 1.2, ease: "easeOut" }}
+      transition={{ duration: 1.4, ease: "easeOut" }}
       className="relative mx-auto w-full"
       style={{
-        maskImage:
-          "radial-gradient(ellipse 92% 82% at 56% 46%, black 30%, rgba(0,0,0,0.55) 52%, transparent 72%)",
-        WebkitMaskImage:
-          "radial-gradient(ellipse 92% 82% at 56% 46%, black 30%, rgba(0,0,0,0.55) 52%, transparent 72%)",
+        mixBlendMode: "multiply",
+        maskImage: [
+          "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 12%, black 30%, black 85%, transparent 100%)",
+          "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+        ].join(", "),
+        WebkitMaskImage: [
+          "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 12%, black 30%, black 85%, transparent 100%)",
+          "linear-gradient(to bottom, transparent 0%, black 12%, black 88%, transparent 100%)",
+        ].join(", "),
+        WebkitMaskComposite: "source-in",
+        maskComposite: "intersect",
       }}
     >
       <video
