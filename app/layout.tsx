@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "MaryDoc — Real Doctors. Real Conversations. Real Relief.",
   description:
     "Connect with licensed physicians online and get the medical guidance you need to live a better, more comfortable life.",
+  icons: {
+    icon: "/marydoc-favicon.svg",
+    shortcut: "/marydoc-favicon.svg",
+    apple: "/marydoc-favicon.svg",
+  },
 };
 
 export default function RootLayout({

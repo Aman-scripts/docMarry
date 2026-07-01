@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section
       aria-label="Healthcare that understands you"
-      className="relative flex min-h-screen flex-col justify-center overflow-hidden rounded-b-[2.5rem] sm:rounded-b-[3rem]"
+      className="relative flex min-h-screen flex-col justify-center overflow-hidden rounded-b-[3rem] sm:rounded-b-[5rem]"
       style={{
         background: "linear-gradient(135deg, #F2F2F2 0%, #F2E4D8 100%)",
         boxShadow: "0 20px 60px rgba(100, 85, 60, 0.22)",

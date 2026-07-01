@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-1329.8" y1="727.7" x2="-1329.8" y2="596.1" gradientTransform="translate(1766.98 791.74) rotate(45)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cc9a06"/>
+      <stop offset="1" stop-color="#ffc107"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="108.33" y1="300" x2="491.67" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#016430"/>
+      <stop offset="1" stop-color="#01b459"/>
+    </linearGradient>
+  </defs>
+  <circle class="cls-2" cx="300" cy="300" r="300"/>
+  <g>
+    <path class="cls-3" d="M382.95,343.78c-19.27,19.27-45.91,26.67-70.84,22.21-4.46-24.93,2.94-51.57,22.21-70.84,19.27-19.27,45.91-26.67,70.84-22.21,4.46,24.93-2.94,51.57-22.21,70.84Z"/>
+    <path class="cls-1" d="M481.03,101.64c-6.56-2.97-13.99-1.86-19.4,2.9l-161.64,142.25L138.35,104.54c-5.4-4.75-12.83-5.86-19.39-2.9-6.56,2.97-10.63,9.28-10.63,16.47v363.8c0,9.97,8.11,18.08,18.08,18.08h144.65c9.97,0,18.08-8.11,18.08-18.08v-101.51c0-.34-.02-.67-.05-1,.73-21.4-7.08-43.04-23.42-59.38-19.27-19.27-45.91-26.67-70.84-22.21-4.46,24.93,2.94,51.57,22.21,70.84,14.05,14.05,32.03,21.79,50.4,23.22v86.43h-137.42V126.12l158.03,139.07c6.81,5.99,17.08,5.98,23.88,0l158.03-139.07v352.19h-148.27c-5.99,0-10.85,4.86-10.85,10.85s4.86,10.85,10.85,10.85h151.89c9.97,0,18.08-8.11,18.08-18.08V118.11c0-7.19-4.07-13.51-10.63-16.47Z"/>
+  </g>
+</svg>

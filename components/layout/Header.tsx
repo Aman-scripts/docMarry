@@ -44,7 +44,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex shrink-0 items-center">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/logo-one.svg" alt="MaryDoc" className="h-9 w-auto sm:h-11" />
+            <img src="/marydoc-textlogo.svg" alt="MaryDoc" className="h-9 w-auto sm:h-11" />
           </Link>
 
           {/* Desktop nav */}
