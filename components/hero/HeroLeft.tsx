@@ -176,7 +176,6 @@ export function HeroLeft({ isVisible }: { isVisible: boolean }) {
           <span className="font-bold text-[#016430]">30 states</span>.
         </p>
       </div>
-
     </div>
   );
 }

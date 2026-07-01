@@ -1,20 +1,18 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { motion } from "framer-motion";
 
 export function HeroRight() {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-    if (prefersReducedMotion) video.pause();
-    else video.play().catch(() => {});
-  }, []);
+  const handleMouseEnter = () => {
+    videoRef.current?.play().catch(() => {});
+  };
+
+  const handleMouseLeave = () => {
+    videoRef.current?.pause();
+  };
 
   return (
     <motion.div
@@ -22,6 +20,8 @@ export function HeroRight() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.4, ease: "easeOut" }}
       className="relative mx-auto w-full"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       style={{
         mixBlendMode: "multiply",
         maskImage: [
@@ -41,7 +41,6 @@ export function HeroRight() {
         className="w-full object-cover"
         style={{ aspectRatio: "4/3" }}
         src="/hero-section.mp4"
-        autoPlay
         loop
         muted
         playsInline
